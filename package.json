@@ -1,0 +1,29 @@
+{
+  "name": "js2-hw18",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/CupheadUltra/JS2-HW18#readme",
+  "bugs": {
+    "url": "https://github.com/CupheadUltra/JS2-HW18/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CupheadUltra/JS2-HW18.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "start": "npx parcel src/index.html",
+    "build": "parcel build src/index.html --no-cache --public-url /JS2-HW18/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "server": "npx json-server students.json"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
